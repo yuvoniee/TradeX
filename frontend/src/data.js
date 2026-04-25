@@ -1,0 +1,137 @@
+export const REFERENCE_TRADES = [
+  {
+    type: "good",
+    label: "Support bounce",
+    title: "HDFC Bank — Jan–Jul 2023",
+    why: "Price pulled back to a multi-month support zone. RSI was oversold at 32. Patient entry near ₹1,550 yielded a 28% gain over 6 months without chasing the move.",
+    signal: "Support + RSI oversold + patience",
+  },
+  {
+    type: "good",
+    label: "Trend reversal",
+    title: "Infosys — Oct 2022 reversal",
+    why: "After a 35% drawdown, a volume spike with a higher low confirmed reversal. Entry made after confirmation candle, not at the bottom. Held 9 months for 41% return.",
+    signal: "Volume + higher low + confirmation",
+  },
+  {
+    type: "good",
+    label: "Accumulation zone",
+    title: "Reliance Industries — 2020 base",
+    why: "Stock consolidated in a tight 8% range for 8 weeks post-COVID crash. Low volatility contraction + fundamental strength = high-conviction long. Breakout delivered 60%.",
+    signal: "Tight consolidation + fundamentals",
+  },
+  {
+    type: "bad",
+    label: "FOMO entry",
+    title: "Paytm IPO — Nov 2021",
+    why: "Entered at IPO peak on pure hype and fear of missing out. No support level, no confirmed trend, no business model profitability. Stock fell 75% within a year of listing.",
+    signal: "Emotional entry at peak — no analysis",
+  },
+  {
+    type: "bad",
+    label: "Blind averaging down",
+    title: "Yes Bank — 2019–2020",
+    why: "Kept buying more as price fell, ignoring fundamental deterioration (NPAs rising, management exits). No stop loss in place. Averaged into a collapsing thesis — lost 90%+ of capital.",
+    signal: "Denial + averaging into failure",
+  },
+  {
+    type: "bad",
+    label: "Ignoring macro context",
+    title: "IT sector — FY2022 selloff",
+    why: "Entered long on strong quarterly earnings, completely ignoring the US Fed rate hike cycle beginning. Rising rates crushed high-PE tech stocks globally — sector fell 40%.",
+    signal: "Micro focus, ignored macro risk",
+  },
+];
+
+export const SCENARIOS = [
+  {
+    id: "support_bounce",
+    title: "Support bounce play",
+    desc: "A blue-chip stock pulls back to a major support level after a sustained uptrend. Patience and technical discipline are tested.",
+    icon: "📈",
+    iconColor: "green",
+    duration: "6 months",
+    data: [100, 102, 101, 99, 97, 96, 95, 94, 95, 97, 99, 102, 106, 111, 116, 121, 118, 122],
+    tests: [
+      "Enter near support, not after the breakout",
+      "Mention stop loss in your reasoning",
+      "Hold through minor volatility",
+    ],
+    keywords: {
+      good: ["support", "oversold", "rsi", "bounce", "bottom", "pullback", "hold", "patient", "level", "technical"],
+      risk: ["risk", "stop", "loss", "sl", "manage", "exit", "protect", "cap"],
+    },
+  },
+  {
+    id: "fomo_spike",
+    title: "FOMO spike trap",
+    desc: "A momentum stock spikes 30% on breaking news. Retail FOMO is at peak. Can you stay disciplined while others chase?",
+    icon: "🔥",
+    iconColor: "red",
+    duration: "3 months",
+    data: [100, 103, 107, 113, 122, 131, 129, 122, 113, 106, 101, 96, 93, 91, 90, 91, 93, 96],
+    tests: [
+      "Avoid chasing the initial spike",
+      "Wait for pullback and confirmation",
+      "Acknowledge risk before entry",
+    ],
+    keywords: {
+      good: ["pullback", "confirm", "wait", "consolidat", "base", "retest", "patient", "after", "retrace"],
+      risk: ["risk", "stop", "loss", "sl", "manage", "exit", "protect"],
+    },
+  },
+  {
+    id: "slow_bleed",
+    title: "Slow bleed test",
+    desc: "A stock that looked strong gradually deteriorates over 9 months. Your stop loss discipline and patience are put to the ultimate test.",
+    icon: "📉",
+    iconColor: "red",
+    duration: "9 months",
+    data: [100, 99, 98.5, 97.5, 96, 94, 92, 91, 89, 87, 85, 84, 82, 81, 80, 79, 78, 77],
+    tests: [
+      "Respect your stop loss level",
+      "Identify the downtrend early",
+      "Do not average down without a thesis change",
+    ],
+    keywords: {
+      good: ["downtrend", "stop", "exit", "cut", "loss", "bearish", "deteriorat", "trend", "weak"],
+      risk: ["risk", "stop", "loss", "sl", "manage", "exit", "protect"],
+    },
+  },
+  {
+    id: "reversal",
+    title: "Reversal pattern",
+    desc: "A stock has fallen 40% from its peak. Signs of a reversal are forming. Entry timing and thesis clarity are everything here.",
+    icon: "🔄",
+    iconColor: "amber",
+    duration: "1 year",
+    data: [100, 95, 90, 85, 82, 79, 78, 79, 81, 85, 90, 96, 103, 110, 118, 126, 122, 128],
+    tests: [
+      "Enter after reversal signal, not at the bottom",
+      "Mention trend change in reasoning",
+      "Hold through the recovery phase",
+    ],
+    keywords: {
+      good: ["reversal", "bottom", "signal", "higher low", "volume", "confirm", "recover", "base", "turn"],
+      risk: ["risk", "stop", "loss", "sl", "manage", "exit", "protect"],
+    },
+  },
+  {
+    id: "accumulation",
+    title: "Accumulation grind",
+    desc: "A quality stock consolidates in a tight range for months. Conviction, patience, and recognising the pattern are what separates winners.",
+    icon: "⏳",
+    iconColor: "blue",
+    duration: "1 year",
+    data: [100, 101, 99, 100, 102, 101, 100, 99, 101, 102, 103, 101, 100, 102, 104, 108, 113, 121],
+    tests: [
+      "Identify the consolidation correctly",
+      "Show conviction in your reasoning",
+      "Hold through the breakout",
+    ],
+    keywords: {
+      good: ["consolidat", "accumul", "range", "tight", "breakout", "hold", "conviction", "patience", "coil"],
+      risk: ["risk", "stop", "loss", "sl", "manage", "exit", "protect"],
+    },
+  },
+];

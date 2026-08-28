@@ -1,3 +1,21 @@
+<p align="center">
+  <img src="./TradeXBanner.png" alt="TRADEX — Long-Term Trading Traine" width="100%">
+</p>
+
+<p align="center">
+  <strong>A behavioral trading simulator that evaluates your reasoning and discipline, not just your profit.</strong>
+</p>
+
+---
+
+## ✦ The Idea
+
+Most trading simulators ask one question:
+
+> **Did you make money?**
+
+TRADEX looks deeper.
+
 # TRADEX
 
 > **A long-term trading trainer built around one question:**
